@@ -1,0 +1,64 @@
+.wrapper{
+	width:960px;
+	margin:0 auto;
+}
+.navi-logo{
+	width: 160px;
+    height: 38px;
+    overflow: hidden;
+}
+.top-nav{
+	height: 49px;
+    background: url(../images/news_m_02.png) repeat-x 0 -25px #203d80;
+    padding-left: 38px;
+    position: relative;
+    z-index: 2;	
+}
+.top-nav a{	
+    width: 44px;
+    float: left;   
+    height: 47px;
+    overflow: hidden;
+    margin: 0 2px;
+    color:#fff;
+    font:bold 16px/47px 微软雅黑;
+}
+.item{
+	margin-top:15px;
+}
+.wrapper .side-left,.wrapper .side-center{
+	float:left;
+	width:310px;
+	margin-right:15px;
+}
+.wrapper .side-right{
+	float:right;
+	width:310px;
+}
+
+.subject-title{
+    line-height: 37px;
+    font-size: 18px;
+    color: #990000;
+    font-family: "Microsoft YaHei","微软雅黑","黑体";
+    border-bottom: 2px solid #990000;
+}
+
+.list{
+    padding: 20px 0 8px;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 7px 0 5px;
+}
+.list li{
+    padding-left: 13px;
+    background: url(../../images/news_m_04.png) no-repeat -475px -613px;
+    height: 24px;
+    overflow: hidden;
+    font-family:宋体;
+}
+
+
+
+
+

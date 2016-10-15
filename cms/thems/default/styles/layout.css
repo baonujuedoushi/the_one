@@ -1,0 +1,110 @@
+#top-bar-wrap {
+    height: 45px;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    background-color: #fbfbfb;
+    font-family: 'Microsoft Yahei';
+}
+#top-bar-inner{
+    width: 960px;
+    margin: 0 auto;
+}
+#nav-list li {
+    float: left;
+    height: 45px;
+}
+#nav-list a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 16px;
+    color: #000;
+    font-size: 14px;
+}
+.wrap-inner{
+    width: 960px;
+    margin: 0 auto;
+}
+.wrap-inner .site-header {
+    margin-top: 15px;
+    position: relative;
+    z-index: 1000;
+}
+.site-header h2{
+	float:left;
+}
+.site-header h2 a {
+    display: block;
+    width: 137px;
+    height: 36px;
+    background: url("../../ad/news_logo.png") no-repeat;
+    text-indent: -9999em;
+}
+.site-header .bread {
+    float: left;
+    display: inline;
+    margin: 10px 0 0 20px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.page-info {
+    height: 26px;
+    margin-top: 15px;
+}
+
+.page-header h1 {
+	margin-top: 15px;
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+#commentCount{
+	height: 36px;
+    line-height: 36px;
+    padding-left: 15px;
+    margin: 0 18px 0 0;
+    color: #ff8500;
+    font-size: 36px;
+    font-family: "Arial black";
+}
+#commentCount i{
+	color: #555555;
+    height: 36px;
+    font-style: normal;
+    font-size: 14px;
+    padding-left:10px;
+    font-family: "Microsoft YaHei","\u5FAE\u8F6F\u96C5\u9ED1","Arial","SimSun","\u5B8B\u4F53";
+}
+
+.media_name{
+	padding-left:10px;
+}
+
+.page-content{
+    border-top: 1px solid #d0d0d0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.page-content .left{
+	float: left;
+    width:660px;
+    padding-top:15px;  
+}
+#article{
+    font-size: 16px;
+    padding:0 10px;
+}
+#article p {
+    font-size: 16px;
+    line-height: 2em;
+    margin: 15px 0;
+    text-indent:2em;
+}
+.page-content .right{
+    width: 300px;
+    float: right;
+    padding-top: 15px;
+}

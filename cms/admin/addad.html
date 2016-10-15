@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<style>
+body{
+	background:#283C50;
+}
+p{
+	color:#D0D4D0;
+	font-size:26px;
+	font-weight:bold;
+	
+}
+a{
+	color:#FCD208;
+	text-decoration:none;
+}
+td{
+	color:#D0D4D0;
+}
+</style>
+</head>
+<body>
+<p>添加广告</p>
+<form name="form1" action="index.php?act=doadd&ctl=Ad" method="post" enctype="multipart/form-data">
+	<table width="100%" cellpadding="10" cellspacing="0" border="1">
+		<tr>
+			<td width="100">链接地址</td>
+			<td><input type="text" name="linkurl"/></td>
+		</tr>
+		<tr>
+			<td>广告图片</td>
+			<td><input type="file" name="imageurl"/></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><input type="submit" value="确认添加"/></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

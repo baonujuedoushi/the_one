@@ -1,0 +1,38 @@
+body,p,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+body{
+	font-size:12px;
+	font-family:微软雅黑;
+}
+ul,ol{
+	list-style:none;
+}
+a img{
+	border:none;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+table,td,th{  
+	border-collapse:collapse;
+}
+table{
+	width:100%;
+}
+td,th{
+	font-weight:normal;
+	text-align:left;
+}
+.clear:after{
+	display:block;
+	height:0;
+	content:".";
+	visibility:hidden;	
+	clear:both;
+}
+.clear{
+	zoom:1;
+}

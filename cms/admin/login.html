@@ -1,0 +1,92 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(document).keypress(function(e) {
+			if (e.which == 13) {
+				$('#form1').submit();
+			}
+		});
+		$('#vfdo').css('height', '18px');
+		$('#user').css('height', '30px');
+		$('#user').css('width', '180px');
+
+		$('#pass').css('height', '30px');
+		$('#pass').css('width', '180px');
+		$('#vf').click(function() {
+			$(this).attr('src', 'vf.php?' + Math.random());
+		})
+		$('#ok').click(function() {
+			$('#form1').submit();
+			$('#form1').action('dologin.php');
+		})
+		
+	})
+</script>
+<style>
+input {
+	outline: none;
+	font-size: 16px;
+}
+
+body {
+	background: url(../images/loginbg.jpg) no-repeat;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+table {
+	width: 384px;
+}
+
+tr {
+	width: 384px;
+	height: 40px;
+}
+</style>
+</head>
+<body>
+	<form id="form1" action="dologin.php" method="post">
+		<table align="center" border="0" cellspacing="0"
+			style="margin-top: 140px">
+			<tr
+				style="background: url(../images/tablebg2.jpg) no-repeat -103px -507px; width: 384px;">
+				<td colspan="2"></td>
+			</tr>
+			<tr
+				style="background: url(../images/tablebg2.jpg) no-repeat -103px -548px; height: 54px;">
+				<td colspan="2"><input type="text" id="user" name="user" autocomplete="off"
+					style="margin-left: 140px; background: url(../images/tablebg2.jpg) no-repeat -233px -559px; border: 0;" /></td>
+			</tr>
+			<tr
+				style="background: url(../images/tablebg2.jpg) no-repeat -103px -602px; height: 54px;">
+				<td colspan="2"><input type="password" id="pass" name="pass"
+					style="margin-left: 140px; background: url(../images/tablebg2.jpg) no-repeat -233px -562px; border: 0;" /></td>
+			</tr>
+			<tr
+				style="background: #6A8399; font-size: 16px; color: white; text-indent: 1em; line-height: 40px;">
+				<td>验证码</td>
+				<td><input type="text" id="vfdo" name="vf" autocomplete="off">&nbsp;&nbsp;<img
+					src="vf.php" id="vf"></td>
+			</tr>
+			<tr style="background:url(../images/cookie.png) " height="15px" >
+				<td colspan="2" style="font-size:14px;color:white;">&nbsp;&nbsp;<input type="checkbox" name="box" id="save">1分钟内免登录</td>
+			</tr>
+			<tr style="background: #6A8399;">
+				<td colspan="2" align="center"><a href="javascript:;" id="ok"><img
+						src="../images/denglu.png" /></a></td>
+			</tr>
+			<tr
+				style="background: url(../images/tablebg2.jpg) no-repeat -103px -716px;">
+				<td colspan="2"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

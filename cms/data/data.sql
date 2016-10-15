@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS tarena_cms;
+
+CREATE DATABASE tarena_cms DEFAULT CHARACTER SET 'utf8';
+
+USE tarena_cms;
+
+CREATE TABLE news(
+id       MEDIUMINT UNSIGNED KEY AUTO_INCREMENT,
+subject  VARCHAR(60) NOT NULL,
+filepath VARCHAR(50) NOT NULL
+);
+
+
+
+
+

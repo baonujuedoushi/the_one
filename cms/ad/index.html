@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<style type="text/css">
+body,html{padding:0;margin:0;}
+body{font:14px/20px "Microsoft Yahei","\5FAE\8F6F\96C5\9ED1","SimSun","\5B8B\4F53","Arial Narrow",serif;}
+h1{padding:0;margin:0;font-size:18px;color:#333;}
+h2{padding:0;margin:0;font-size:16px;line-height:25px;height:25px;overflow:hidden;}
+a{color:#333;text-decoration:none;}
+a:visited{color:#333;}
+a:hover{color:#fe8503;text-decoration:none;}
+.clear:after{content:'.';display:block;height:0;clear:both;visibility: hidden;}
+.clear{*zoom:1;}
+#ad-container{
+	width:300px;
+	height:500px;
+	overflow:hidden;
+}
+</style>
+<script type="text/javascript" src="ad.js"></script>
+<script type="text/javascript">
+function rotateAd(){
+	var imgEle = document.getElementById('rotateAd');
+	var index = Math.floor(Math.random()*addArr.length);
+	
+	var aEle=document.getElementById('link');
+	imgEle.src = addArr[index];
+	
+	aEle.href=lkarr[index];
+}
+</script>
+</head>
+<body onload="rotateAd()">
+<div id="ad-container"><a href="" id="link"><img id="rotateAd" src=""/></a></div>
+</body>
+</html>
+
+
+
+
+
+

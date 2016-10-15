@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+<style>
+body{
+	background:#283C50;
+}
+p{
+	color:#D0D4D0;
+	font-size:30px;
+	text-indent:2em;
+}
+a{
+	color:#FCD208;
+	text-decoration:none;
+}
+#span{
+	color:#D0D4D0;
+	
+	
+}
+.span{
+	margin-left:90px;
+	color:#D0D4D0;
+}
+</style>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript">
+var n='10';
+function fun1(){
+	
+	$('#span').text(n+'秒后返回列表');
+	if(n==0){
+		window.clearTimeout($time);
+		window.location.href="index.php?act=listmedia&ctl=Media";
+		}
+	n--;
+}
+
+
+
+var $time=window.setInterval('fun1()',1000);
+
+</script>
+</head>
+<body>
+
+<p></p>
+<p>添加成功,<a href="index.php?act=addmedia&ctl=Media">继续添加</a></p>
+
+<span class="span"><a href="index.php?act=listmedia&ctl=Media" style="text-decoration:underline;">立即返回,</a></span><span id="span"></span>
+</body>
+</html>
